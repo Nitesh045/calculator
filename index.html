@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1d2b90fefa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculator</h2>
+        <div>
+            <table class="calculator">
+                <tr>
+                    <td colspan="3">
+                        <input type="text" id="inputValue" class="inputBox" >
+                    </td>
+                    <td>
+                        <input type="button" value="C" id="btn">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" onclick="getValue('7')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="8" onclick="getValue('8')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="9" onclick="getValue('9')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="+" onclick="getValue('+')"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" onclick="getValue('4')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="5" onclick="getValue('5')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="6" onclick="getValue('6')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="-" onclick="getValue('-')"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1" onclick="getValue('1')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="2" onclick="getValue('2')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="3" onclick="getValue('3')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="/" onclick="getValue('/')"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="." onclick="getValue('.')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="0" onclick="getValue('0')"/>
+                    </td>
+                    <td>
+                        <input type="button" value="=" onclick="getResult()"/>
+                    </td>
+                    <td>
+                        <input type="button" value="*" onclick="getValue('*')"/>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
